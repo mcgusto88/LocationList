@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddLocationDelegate.h"
 
-@interface addLocationVC : UIViewController
+@interface AddLocationVC : UIViewController<UITextFieldDelegate,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameTF;
 @property (weak, nonatomic) IBOutlet UITextField *addressTF;
 @property (weak, nonatomic) IBOutlet UITextView *descritptionTextView;
+@property(weak,nonatomic) id<AddLocationDelegate>delegate;
 - (IBAction)addBtn:(id)sender;
 - (IBAction)backBtn:(id)sender;
 

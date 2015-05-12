@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Location : NSObject
-@property(weak,nonatomic)NSString *name;
-@property(weak,nonatomic)NSString *address;
-@property(weak,nonatomic)NSString *descriptionStr;
+@property(strong,nonatomic)NSString *name;
+@property(strong,nonatomic)NSString *address;
+@property(strong,nonatomic)NSString *descriptionStr;
 
 -(id)initWithName:(NSString*)name andAddress:(NSString*)address
 andDescritpionStr:(NSString*)descriptionStr;

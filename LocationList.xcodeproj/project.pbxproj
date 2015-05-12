@@ -19,7 +19,7 @@
 		ECD46CC51B0249E20014F13B /* LocationDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CC41B0249E20014F13B /* LocationDetailVC.m */; };
 		ECD46CC71B024AAD0014F13B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD46CC61B024AAD0014F13B /* MapKit.framework */; };
 		ECD46CC91B024AB90014F13B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD46CC81B024AB90014F13B /* CoreLocation.framework */; };
-		ECD46CCC1B024BCF0014F13B /* addLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CCB1B024BCF0014F13B /* addLocationVC.m */; };
+		ECD46CCC1B024BCF0014F13B /* AddLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CCB1B024BCF0014F13B /* AddLocationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC214BA31B025C7900E63E41 /* AddLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationDelegate.h; sourceTree = "<group>"; };
 		ECAA054F1B0254740043797D /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		ECAA05501B0254740043797D /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		ECD46C941B0244870014F13B /* LocationList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +54,8 @@
 		ECD46CC41B0249E20014F13B /* LocationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailVC.m; sourceTree = "<group>"; };
 		ECD46CC61B024AAD0014F13B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ECD46CC81B024AB90014F13B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		ECD46CCA1B024BCF0014F13B /* addLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addLocationVC.h; sourceTree = "<group>"; };
-		ECD46CCB1B024BCF0014F13B /* addLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addLocationVC.m; sourceTree = "<group>"; };
+		ECD46CCA1B024BCF0014F13B /* AddLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationVC.h; sourceTree = "<group>"; };
+		ECD46CCB1B024BCF0014F13B /* AddLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLocationVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		ECD46C8B1B0244860014F13B = {
 			isa = PBXGroup;
 			children = (
+				EC214BA31B025C7900E63E41 /* AddLocationDelegate.h */,
 				ECD46CC81B024AB90014F13B /* CoreLocation.framework */,
 				ECD46CC61B024AAD0014F13B /* MapKit.framework */,
 				ECD46CC31B0249E20014F13B /* LocationDetailVC.h */,
@@ -109,8 +111,8 @@
 				ECD46CA41B0244880014F13B /* Main.storyboard */,
 				ECAA054F1B0254740043797D /* Location.h */,
 				ECAA05501B0254740043797D /* Location.m */,
-				ECD46CCA1B024BCF0014F13B /* addLocationVC.h */,
-				ECD46CCB1B024BCF0014F13B /* addLocationVC.m */,
+				ECD46CCA1B024BCF0014F13B /* AddLocationVC.h */,
+				ECD46CCB1B024BCF0014F13B /* AddLocationVC.m */,
 				ECD46CA71B0244880014F13B /* Images.xcassets */,
 				ECD46CA91B0244880014F13B /* LaunchScreen.xib */,
 				ECD46C9E1B0244880014F13B /* LocationList.xcdatamodeld */,
@@ -249,7 +251,7 @@
 				ECAA05511B0254740043797D /* Location.m in Sources */,
 				ECD46C9D1B0244880014F13B /* AppDelegate.m in Sources */,
 				ECD46CA31B0244880014F13B /* LocationListVC.m in Sources */,
-				ECD46CCC1B024BCF0014F13B /* addLocationVC.m in Sources */,
+				ECD46CCC1B024BCF0014F13B /* AddLocationVC.m in Sources */,
 				ECD46C9A1B0244880014F13B /* main.m in Sources */,
 				ECD46CC51B0249E20014F13B /* LocationDetailVC.m in Sources */,
 			);

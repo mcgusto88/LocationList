@@ -28,8 +28,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _locations.count;
 }
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath{
@@ -37,12 +36,32 @@
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     
+    Location *locationToDisplay = _locations[indexPath.row];
+    
+    cell.textLabel.text = locationToDisplay.name;
+    cell.detailTextLabel.text = locationToDisplay.address;
+    
     return cell;
 
 }
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     [self performSegueWithIdentifier:@"toDetailVC" sender:indexPath];
 
+
+
+}
+-(void)addLocation:(Location *)location{
+    [_locations addObject:location];
+    [_tableView reloadData];
+    
+    NSString *msgStr = [NSString  stringWithFormat:@"Your new location, %@ has been added", location.name];
+    if(location != nil){
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Success" message:msgStr delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }else{
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Your Location failed to be added" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
 
 
 }
@@ -58,6 +77,9 @@
         //Assign that object to a proxy property located in locationDetailVC that corresponds
         //to the same type allowing us to pass the entire object and display the location
         //for that object
+        
+        AddLocationVC *alvc = (AddLocationVC*)segue.destinationViewController;
+        alvc.delegate = self;
     
     
     }

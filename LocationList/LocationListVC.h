@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LocationListVC : UIViewController<UITableViewDelegate,UITableViewDataSource>
+#import "AddLocationDelegate.h"
+#import "AddLocationVC.h"
+#import "LocationDetailVC.h"
+@interface LocationListVC : UIViewController<UITableViewDelegate,UITableViewDataSource,AddLocationDelegate>
 @property(strong,nonatomic)IBOutlet UITableView *tableView;
 @property(strong,nonatomic)NSMutableArray *locations;
 
