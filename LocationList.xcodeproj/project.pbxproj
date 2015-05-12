@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECAA05511B0254740043797D /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA05501B0254740043797D /* Location.m */; };
 		ECD46C9A1B0244880014F13B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46C991B0244880014F13B /* main.m */; };
 		ECD46C9D1B0244880014F13B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46C9C1B0244880014F13B /* AppDelegate.m */; };
 		ECD46CA01B0244880014F13B /* LocationList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD46C9E1B0244880014F13B /* LocationList.xcdatamodeld */; };
-		ECD46CA31B0244880014F13B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CA21B0244880014F13B /* ViewController.m */; };
+		ECD46CA31B0244880014F13B /* LocationListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CA21B0244880014F13B /* LocationListVC.m */; };
 		ECD46CA61B0244880014F13B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD46CA41B0244880014F13B /* Main.storyboard */; };
 		ECD46CA81B0244880014F13B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD46CA71B0244880014F13B /* Images.xcassets */; };
 		ECD46CAB1B0244880014F13B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD46CA91B0244880014F13B /* LaunchScreen.xib */; };
 		ECD46CB71B02448E0014F13B /* LocationListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CB61B02448E0014F13B /* LocationListTests.m */; };
+		ECD46CC51B0249E20014F13B /* LocationDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CC41B0249E20014F13B /* LocationDetailVC.m */; };
+		ECD46CC71B024AAD0014F13B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD46CC61B024AAD0014F13B /* MapKit.framework */; };
+		ECD46CC91B024AB90014F13B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD46CC81B024AB90014F13B /* CoreLocation.framework */; };
+		ECD46CCC1B024BCF0014F13B /* addLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD46CCB1B024BCF0014F13B /* addLocationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +33,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ECAA054F1B0254740043797D /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		ECAA05501B0254740043797D /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		ECD46C941B0244870014F13B /* LocationList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD46C981B0244880014F13B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD46C991B0244880014F13B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD46C9B1B0244880014F13B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECD46C9C1B0244880014F13B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECD46C9F1B0244880014F13B /* LocationList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationList.xcdatamodel; sourceTree = "<group>"; };
-		ECD46CA11B0244880014F13B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ECD46CA21B0244880014F13B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECD46CA11B0244880014F13B /* LocationListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationListVC.h; sourceTree = "<group>"; };
+		ECD46CA21B0244880014F13B /* LocationListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationListVC.m; sourceTree = "<group>"; };
 		ECD46CA51B0244880014F13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECD46CA71B0244880014F13B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECD46CAA1B0244880014F13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ECD46CB01B02448D0014F13B /* LocationListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD46CB51B02448D0014F13B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD46CB61B02448E0014F13B /* LocationListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationListTests.m; sourceTree = "<group>"; };
+		ECD46CC31B0249E20014F13B /* LocationDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailVC.h; sourceTree = "<group>"; };
+		ECD46CC41B0249E20014F13B /* LocationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailVC.m; sourceTree = "<group>"; };
+		ECD46CC61B024AAD0014F13B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ECD46CC81B024AB90014F13B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ECD46CCA1B024BCF0014F13B /* addLocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addLocationVC.h; sourceTree = "<group>"; };
+		ECD46CCB1B024BCF0014F13B /* addLocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addLocationVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD46CC91B024AB90014F13B /* CoreLocation.framework in Frameworks */,
+				ECD46CC71B024AAD0014F13B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,10 @@
 		ECD46C8B1B0244860014F13B = {
 			isa = PBXGroup;
 			children = (
+				ECD46CC81B024AB90014F13B /* CoreLocation.framework */,
+				ECD46CC61B024AAD0014F13B /* MapKit.framework */,
+				ECD46CC31B0249E20014F13B /* LocationDetailVC.h */,
+				ECD46CC41B0249E20014F13B /* LocationDetailVC.m */,
 				ECD46C961B0244870014F13B /* LocationList */,
 				ECD46CB31B02448D0014F13B /* LocationListTests */,
 				ECD46C951B0244870014F13B /* Products */,
@@ -85,9 +104,13 @@
 			children = (
 				ECD46C9B1B0244880014F13B /* AppDelegate.h */,
 				ECD46C9C1B0244880014F13B /* AppDelegate.m */,
-				ECD46CA11B0244880014F13B /* ViewController.h */,
-				ECD46CA21B0244880014F13B /* ViewController.m */,
+				ECD46CA11B0244880014F13B /* LocationListVC.h */,
+				ECD46CA21B0244880014F13B /* LocationListVC.m */,
 				ECD46CA41B0244880014F13B /* Main.storyboard */,
+				ECAA054F1B0254740043797D /* Location.h */,
+				ECAA05501B0254740043797D /* Location.m */,
+				ECD46CCA1B024BCF0014F13B /* addLocationVC.h */,
+				ECD46CCB1B024BCF0014F13B /* addLocationVC.m */,
 				ECD46CA71B0244880014F13B /* Images.xcassets */,
 				ECD46CA91B0244880014F13B /* LaunchScreen.xib */,
 				ECD46C9E1B0244880014F13B /* LocationList.xcdatamodeld */,
@@ -223,9 +246,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD46CA01B0244880014F13B /* LocationList.xcdatamodeld in Sources */,
+				ECAA05511B0254740043797D /* Location.m in Sources */,
 				ECD46C9D1B0244880014F13B /* AppDelegate.m in Sources */,
-				ECD46CA31B0244880014F13B /* ViewController.m in Sources */,
+				ECD46CA31B0244880014F13B /* LocationListVC.m in Sources */,
+				ECD46CCC1B024BCF0014F13B /* addLocationVC.m in Sources */,
 				ECD46C9A1B0244880014F13B /* main.m in Sources */,
+				ECD46CC51B0249E20014F13B /* LocationDetailVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +442,7 @@
 				ECD46CBC1B02448E0014F13B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD46CBD1B02448E0014F13B /* Build configuration list for PBXNativeTarget "LocationListTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +451,7 @@
 				ECD46CBF1B02448E0014F13B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
